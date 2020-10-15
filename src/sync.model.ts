@@ -11,7 +11,7 @@ export class Sync extends Model {
 Sync.init(
   {
     entityName: {
-      type: DataTypes.STRING(128),      
+      type: DataTypes.STRING(128),
       primaryKey: true,
     },
     dataVersion: {

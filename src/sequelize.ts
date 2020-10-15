@@ -7,5 +7,5 @@ export const sequelize = new Sequelize({
   password: 'admin123',
   username: 'postgresadmin',
   dialect: 'postgres',
-  logging: false
+  logging: false,
 });
