@@ -15,8 +15,7 @@ Sync.init(
       primaryKey: true,
     },
     dataVersion: {
-      type: new DataTypes.STRING(128),
-      primaryKey: true,
+      type: new DataTypes.STRING(128)
     },
   },
   {
@@ -25,3 +24,4 @@ Sync.init(
     sequelize: sequelize, // this bit is important
   },
 );
+
