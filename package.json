@@ -1,5 +1,5 @@
 {
-  "name": "typescript-starter",
+  "name": "orm-tutorial",
   "version": "1.0.0",
   "description": "A basic typescript app starter for newbies in 2019.",
   "main": "index.js",
@@ -21,7 +21,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test && npm run prettier-format && npm run lint"
+      "pre-commit": "npm run prettier-format && npm run lint"
     }
   },
   "keywords": [],
