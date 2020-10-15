@@ -7,7 +7,6 @@
     "build": "rimraf ./build && tsc",
     "start:dev": "nodemon",
     "start": "npm run build && node build/index.js",
-    "lint": "eslint . --ext .ts",
     "prettier-format": "run-script-os",
     "prettier-format:win32": "prettier --config .prettierrc \"./src/**/*.ts\" --write",
     "prettier-format:darwin:linux": "prettier --config .prettierrc 'src/**/*.ts' --write",
@@ -21,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint"
+      "pre-commit": "npm run prettier-format"
     }
   },
   "keywords": [],
@@ -30,11 +29,8 @@
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "@types/node": "^12.7.2",
-    "@typescript-eslint/eslint-plugin": "^2.21.0",
-    "@typescript-eslint/parser": "^2.21.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
+    "@types/sequelize": "^4.28.9",
+    "@types/validator": "^13.1.0",
     "husky": "^4.2.3",
     "nodemon": "^1.19.1",
     "onchange": "^6.1.0",
@@ -45,8 +41,9 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "eslint-plugin-jest": "^24.1.0",
     "jest": "^26.5.3",
+    "pg": "^8.4.1",
+    "sequelize": "^6.3.5",
     "ts-jest": "^26.4.1"
   }
 }
