@@ -42,7 +42,7 @@ node {
    stage('Deploy postgres to Kubernetes') {
       if ("${env.BRANCH_NAME}" == 'main') {
          sh "kubectl create -f k8s/postgres/pvc.yaml"
-         // sh "kubectl apply -f k8s/nodejs-hello-world.yaml --namespace ${NAMESPACE}"
+         sh "kubectl create -f k8s/postgres/deployment.yaml"         
       }
    }
 
