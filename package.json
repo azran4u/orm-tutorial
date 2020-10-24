@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.14",
-    "@types/node": "^12.7.2",
+    "@types/node": "^12.12.68",
     "@types/sequelize": "^4.28.9",
     "@types/validator": "^13.1.0",
     "husky": "^4.2.3",
@@ -27,7 +27,9 @@
   "dependencies": {
     "jest": "^26.5.3",
     "pg": "^8.4.1",
+    "reflect-metadata": "^0.1.13",
     "sequelize": "^6.3.5",
-    "ts-jest": "^26.4.1"
+    "ts-jest": "^26.4.1",
+    "typeorm": "^0.2.28"
   }
 }

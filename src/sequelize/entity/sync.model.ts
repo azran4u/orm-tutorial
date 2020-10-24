@@ -1,5 +1,5 @@
 import { DataTypes, Model } from 'sequelize';
-import { sequelize } from './sequelize';
+import { sequelize } from '../sequelize';
 
 export class Sync extends Model {
   public entityName!: string;
